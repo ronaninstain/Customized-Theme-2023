@@ -1,11 +1,4 @@
 <?php
-//dashboard custom functions included 
-require_once get_stylesheet_directory() . '/dashboard/dashboard-functions.php';
-require get_stylesheet_directory() . '/classes/AjaxHandler.php';
-
-
-// Custom post type, taxonomy and metabox
-include_once 'includes/cpt-taxonomy-meta.php';
 
 //Sliders
 include_once 'includes/sliders/customCarousels.php';
@@ -29,14 +22,7 @@ function enqueue_child_theme_styles()
 
     wp_enqueue_script('jquery');
 
-    // added by fayez ali
-    wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'),  time());
 
-    wp_enqueue_script('mCustomScrollbar', get_stylesheet_directory_uri() . '/assets/js/mCustomScrollbar.concat.min.js', array('jquery'), '1.0', true);
-
-
-
-    wp_enqueue_script('custom-header', get_stylesheet_directory_uri() . '/assets/js/custom-header.js', array('jquery', 'mCustomScrollbar'),  '1.1', true);
 
     wp_enqueue_script('jquery-min-custom', get_stylesheet_directory_uri() . '/assets/js/jquery.min.js', array(), '3.3');
 

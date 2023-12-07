@@ -1,0 +1,418 @@
+
+
+
+section.admstopsingle23 {
+  background: rgb(28, 59, 73);
+  padding: 50px 0 120px;
+  height: 300px;
+}
+
+section.admstopsingle23 h2.course-title {
+  color: #fff;
+}
+
+section.admstopsingle23 ul.breadcrumbs > * {
+  color: #fff !important;
+}
+
+section.admstopsingle23 .courseStds {
+  color: #e5e0e0;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+section.admstopsingle23 ul.breadcrumbs a,
+section.admstopsingle23 ul.breadcrumbs span {
+  color: rgb(0, 181, 94);
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400 !important;
+  font-family: "Poppins";
+}
+
+section.admstopsingle23 ul.breadcrumbs li:before {
+  color: rgb(0, 181, 94);
+  font-weight: 700;
+}
+
+section.admstopsingle23 h2.course-title {
+  margin: 0;
+  margin-top: 15px;
+}
+
+section.admsmiddlesingle23 .thepubscontent ul li,
+.thepubscontent p {
+  font-family: "Poppins";
+  line-height: 25px;
+  font-size: 16px;
+  color: #002333;
+  font-weight: 400;
+}
+
+section.admsmiddlesingle23 .thepubscontent h2,
+section.admsmiddlesingle23 .thepubscontent h3 {
+  width: 100%;
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  padding: 4px 0 4px;
+  font-family: "Poppins";
+  margin-bottom: 0;
+}
+
+section.admsmiddlesingle23 ul {
+  list-style: disc;
+  margin-left: 25px;
+}
+
+section.admsmiddlesingle23 .side-content .coursePlulisher {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 10px;
+  background-color: #f5f5f5;
+  padding: 20px 24px;
+  margin-top: 24px;
+}
+
+section.admsmiddlesingle23 .side-content .logoBox {
+  width: 20%;
+  max-width: 100%;
+}
+
+section.admsmiddlesingle23 .side-content .publisherInfo h5 {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 25px;
+  margin: 0;
+  color: #3b5662;
+  font-weight: 400;
+}
+
+section.admsmiddlesingle23 .side-content .publisherInfo span {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  color: #002333;
+}
+
+section.admsmiddlesingle23 .thepubscontent p {
+  text-align: justify;
+}
+
+section.admsmiddlesingle23 .side-content {
+  max-width: 380px;
+  margin-left: auto;
+  background: #fff;
+  margin-top: -237px;
+  box-shadow: 0px 2px 9px rgba(50, 71, 92, 0.06),
+    0px 4px 9px 1px rgba(50, 71, 92, 0.04),
+    0px 2px 6px 4px rgba(50, 71, 92, 0.02);
+  border-radius: 5px;
+}
+
+section.admsmiddlesingle23 .coursebtnfree,
+section.admsmiddlesingle23 .the-course-features {
+  padding: 20px;
+}
+
+section.admsmiddlesingle23 .the-course-features h2 {
+  font-family: "Manrope";
+  font-size: 18px;
+}
+
+section.admsmiddlesingle23 .the-course-features ul li {
+  line-height: 20px;
+  font-size: 13px;
+  font-family: "poppins";
+  color: #3b5662;
+}
+
+section.admsmiddlesingle23 .the-course-features ul li {
+  line-height: 30px;
+  font-size: 14px;
+  font-family: "poppins";
+  color: #3b5662;
+}
+
+section.admsmiddlesingle23 input.course_button.full.button {
+  background: rgb(0, 255, 132);
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-family: "Poppins";
+  padding: 17px !important;
+  letter-spacing: 0px;
+}
+
+section.admsmiddlesingle23 .coursebtnfree {
+  padding: 0 20px !important;
+  margin-top: 18px;
+}
+
+section.admsmiddlesingle23 .the-course-features h2 {
+  margin-top: 0;
+}
+
+section.admsmiddlesingle23 .course-image img {
+  border-radius: 5px 5px 0 0;
+  height: 237px;
+  object-fit: cover;
+}
+
+section.admsmiddlesingle23 .the-course-features ul {
+  list-style: none !important;
+  margin-left: 0 !important;
+}
+
+section.admsmiddlesingle23 .the-course-features ul li img {
+  margin-right: 12px;
+}
+
+section.admsmiddlesingle23 .courseContentCriculumn .panel-body ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 38px;
+  color: #3b5662;
+  font-weight: 400;
+}
+
+section.admsmiddlesingle23 .courseContentCriculumn .panel-heading a h4 {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  color: rgb(0, 35, 51);
+}
+
+section.admsmiddlesingle23 .courseContentCriculumn .panel-body {
+  box-shadow: rgba(50, 71, 92, 0.06) 0px 1px 7px 1px,
+    rgba(50, 71, 92, 0.04) 0px 3px 7px 1px,
+    rgba(50, 71, 92, 0.02) 0px 1px 4px 2px;
+}
+
+section.admsmiddlesingle23 .courseContentCriculumn .panel-body ul {
+  margin: 0 !important;
+}
+
+/* Certificate section css start */
+.a2n_certificate-container {
+  box-shadow: 0px 1px 2px 1px rgba(50, 71, 92, 0.06),
+    0px 1px 4px 1px rgba(50, 71, 92, 0.04),
+    0px 1px 2px 2px rgba(50, 71, 92, 0.02);
+  padding: 24px 32px;
+  background-color: #002333;
+  border-radius: 8px;
+  margin: 15px auto;
+  overflow: hidden;
+}
+.a2n_certificate-head h3 {
+  position: relative;
+}
+.a2n_certificate-head h3 a {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #002333;
+  line-height: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.a2n_certificate-head h3::after {
+  content: url("https://adamsfcstg.wpenginepowered.com/wp-content/uploads/2023/12/dash_line-2-1.png");
+  position: absolute;
+  bottom: -50%;
+  right: 5%;
+}
+.certificate-content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+.certificate-inner_items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+}
+.certificate_text h3 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #002333;
+  color: #ffffff;
+}
+.certificate_text span {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+}
+.certificate_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 15px;
+}
+.certificate_icons img {
+  width: 24px;
+  height: 24px;
+}
+.certicate_items {
+  width: 50%;
+}
+.certificate_img {
+  width: 50%;
+}
+.certificate_text {
+  width: 75%;
+}
+.certificate_img img {
+  max-width: 100%;
+}
+
+.a2n_certificate-head h3 {
+  margin: 0;
+}
+
+.certificate_text p {
+  line-height: 19px;
+  font-size: 11px;
+  color: #fff;
+  margin: 0;
+}
+@media (max-width: 780px) {
+  .a2n_certificate-head h3::after {
+    display: none;
+  }
+  .certificate-content {
+    flex-direction: column;
+  }
+  .certificate-content {
+    justify-content: center;
+    text-align: center;
+  }
+  .certificate-inner_items {
+    text-align: left;
+  }
+  .certicate_items {
+    width: 100%;
+  }
+  .certificate_img {
+    width: 100%;
+  }
+  .certificate_text {
+    width: 100%;
+  }
+}
+
+/* Certificate section css end */
+
+/* Publisher About Start*/
+.publisherTitle {
+  font-size: 22px;
+  color: #002333;
+  font-family: "Manrope";
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+h2.singleCoursePageHeading {
+  color: #002333;
+  font-size: 26px;
+  font-family: "Manrope";
+}
+
+.publisherAbout p {
+  font-size: 14px;
+  color: #3b5662;
+  letter-spacing: 0.0093;
+  margin-top: 12px;
+  font-family: "Poppins";
+  line-height: 24px;
+}
+
+.publisherInfo .courseAndTitle {
+  display: flex;
+  align-items: center;
+}
+
+.publisherInfo .publisherlogo {
+  width: 17%;
+  margin-right: 26px;
+}
+
+.publisherInfo .courseCount {
+  font-weight: 400;
+  color: #3b5662;
+  line-height: 1.5rem;
+}
+
+/* Publisher About End*/
+
+
+@media only screen and (min-width: 320px) and (max-width: 1199px) {
+  section.admstopsingle23 {
+    padding: 50px 0 50px;
+  }
+
+  section.admsmiddlesingle23 .side-content {
+    margin-top: -300px;
+  }
+
+  .admsmiddlesingle23 .container, .admstopsingle23 .container {
+    width: 100%;
+  }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  section.admsmiddlesingle23 .side-content {
+      margin-top: -237px;
+  }
+
+  section.admstopsingle23 .courseStds {
+    margin-top: 5px;
+  }
+
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+  ul.breadcrumbs {
+      display: none;
+  }
+  section.admsmiddlesingle23 .side-content {
+      margin-top: -237px;
+  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  section.admstopsingle23 {
+   
+    height: auto;
+  }
+  section.admsmiddlesingle23 .side-content {
+    margin-top: 15px;
+    max-width: 100%;
+  }
+}

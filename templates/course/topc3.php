@@ -44,10 +44,13 @@
 	</div>
 </section>
 <section class="admsmiddlesingle23">
+	<?php
+	$user_id = get_current_user_id();
+	?>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-sm-4">
-				<div class="side-content">
+				<div class="side-content sh-fixed-23-single">
 					<div class="course-image">
 						<?php bp_course_avatar(); ?>
 					</div>
@@ -76,6 +79,9 @@
 								<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/singleCourseImg/cert.svg' ?>" alt="list-favs">Certificate of completion
 							</li>
 						</ul>
+					</div>
+					<div class="share-div">
+						<p>Share: <?php echo do_shortcode('[social_sharing]') ?></p>
 					</div>
 					<div class="coursePlulisher">
 						<?php
@@ -126,61 +132,105 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7 col-sm-8">
+			<div class="col-md-6 col-sm-6">
 				<div class="thepubscontent">
 					<?php the_content(); ?>
 				</div>
 				<div class="courseContentCriculumn">
 					<h2 class="singleCoursePageHeading">Course content</h2>
-					<div class="panel-group" id="accordion">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-									<h4 class="panel-title">
-										<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/singleCourseImg/arrow-right.svg' ?>" alt="cirrtitle">
-										<?php bp_course_name(); ?>
-									</h4>
-								</a>
-							</div>
-							<div id="collapseOne" class="panel-collapse collapse">
-								<div class="panel-body">
-									<ul>
-										<?php
-										$n = 0;
-										foreach ($curriculums as $curriculum) {
-											if ($n != 0) {
-										?>
+
+					<?php
+					function createMultidimensionalArray()
+					{
+
+						$curriculums = bp_course_get_curriculum(get_the_ID());
+						$resultArray = array();
+						$currentParent = null;
+
+						foreach ($curriculums as $item) {
+							if (get_post_type($item) != 'unit') {
+								$currentParent = $item;
+								$resultArray[$currentParent] = array();
+							} elseif ($currentParent !== null) {
+								$resultArray[$currentParent][] = $item;
+							}
+						}
+						return $resultArray;
+					}
+
+					// Example usage
+					$multidimensionalArray = createMultidimensionalArray();
+
+					$id = 1;
+					foreach ($multidimensionalArray as $key => $item) {
+						if (!is_int($key)) {
+					?>
+							<div class="panel-group" id="accordion"> <!-- Start Div 1 -->
+								<div class="panel panel-default"> <!-- Start Div 2 -->
+
+									<div class="panel-heading">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $id; ?>" aria-expanded="<?php echo $position = ($id == 1) ? "true" : "false"; ?>" class="<?php echo $position = ($id == 1) ? "" : "collapsed"; ?>">
+
+											<h4 class="panel-title">
+												<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/singleCourseImg/arrow-right.svg' ?>" alt="cirrtitle">
+												<?php
+												if (count($multidimensionalArray) > 1) {
+													echo get_the_title($item[0]);
+												} else {
+													bp_course_name();
+												}
+												?>
+											</h4>
+										</a>
+									</div>
+								<?php
+							}
+
+								?>
+								<div id="collapse<?php echo $id; ?>" class="panel-collapse <?php echo $position = ($id == 1) ? "collapse in" : "collapse"; ?>" aria-expanded="<?php echo $position = ($id == 1) ? "true" : "false"; ?>">
+
+
+									<div class="panel-body">
+										<ul>
+											<?php
+											foreach ($item as $i) { ?>
 												<li>
 													<div class="videoTitle">
 														<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/singleCourseImg/video.svg' ?>" alt="video">
-														<?php
-														echo get_the_title($curriculum);
-														?>
+														<?php echo get_the_title($i); ?>
 													</div>
 													<div class="videoDuration">
 														<?php
-														$curriculumnDuration = get_post_meta($curriculum, 'vibe_duration', true);
+														$curriculumnDuration = get_post_meta($i, 'vibe_duration', true);
 														if (!empty($curriculumnDuration)) {
-															//echo $curriculumnDuration;
 															$seconds = $curriculumnDuration * 60;
 															$datetime = new DateTime("@$seconds");
 															$timeFormat = $datetime->format('H:i:s');
 															echo $timeFormat; // Output: 02:15:00
-
 														}
 														?>
 													</div>
 												</li>
-										<?php
-
+											<?php
 											}
-											$n++;
-										} ?>
-									</ul>
+											?>
+
+										</ul>
+									</div>
 								</div>
-							</div>
-						</div>
-					</div>
+
+								<?php
+
+								if (!is_int($key)) {
+								?>
+								</div><!-- Closing DIV 1 -->
+							</div><!-- Closing DIV 2 -->
+					<?php
+								}
+								$id++;
+							}
+					?>
+
 				</div>
 
 				<div class="cusCertAdms">
@@ -296,6 +346,19 @@
 
 
 			</div>
+			<div class="col-md-2 col-sm-2">
+				<?php
+				$productBought = hasUserBought($user_id);
+				$subscribe = userHasActiveSubscription($user_id);
+				if ((!$productBought) and (!$subscribe)) {
+				?>
+					<div class="forAds">
+						<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/singleCourseImg/adsexample/singlecourseads1.png' ?>" alt="ads">
+					</div>
+				<?php
+				}
+				?>
+			</div>
 		</div>
 	</div>
 </section>
@@ -334,3 +397,30 @@ if (is_user_logged_in()) {
 ?>
 
 <!-- Admin Nav bar end -->
+
+
+<script>
+	// Step 1: Identify the div elements
+	const courseSingleBottom = document.querySelector('.relatedCourse');
+	const tabFunctionalSide = document.querySelector('.side-content');
+
+	// Step 2: Add a scroll event listener to the window
+	window.addEventListener('scroll', () => {
+		// Step 3: Get the scroll position
+		const scrollPosition = window.scrollY;
+
+		// Step 4: Get the position of the courseSingleBottom div
+		// Step 4: Get the offsetTop of the courseSingleBottom div
+		const coursePosition = courseSingleBottom.offsetTop - 600;
+
+		console.log(coursePosition);
+
+
+		// Step 5: Check if scroll position is below the courseSingleBottom div
+		if (scrollPosition > coursePosition) {
+			tabFunctionalSide.style.display = 'none';
+		} else {
+			tabFunctionalSide.style.display = 'block'; // You can use 'initial' if that's the default display value
+		}
+	});
+</script>

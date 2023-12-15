@@ -1,0 +1,354 @@
+.srs_parent_body {
+  max-width: 1536px;
+  padding: 0 24px;
+  margin: 40px auto;
+}
+
+/* Input Field Css starts */
+.srs_input_of_view_courses:hover {
+  border: 1px solid #002333;
+}
+
+.srs_input_of_view_courses {
+  max-width: 800px;
+  height: 52.156px;
+  margin: 0 auto;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.srs_input_of_view_courses form {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.srs_input_of_view_courses form > .srs_input_field,
+.srs_input_of_view_courses form > .srs_input_field:hover,
+.srs_input_of_view_courses form > .srs_input_field:focus,
+.srs_input_of_view_courses form > .srs_input_field:active,
+.srs_input_of_view_courses form > .srs_input_field:focus-visible {
+  margin: 0;
+  height: 100%;
+  outline: 0px;
+  width: 602px;
+  border: none;
+  margin-left: 8px;
+}
+
+.srs_input_of_view_courses form .srs_input_btn {
+  border: none;
+  background: #002333;
+  color: #fff;
+  margin: 2px 0px 2px;
+  height: 48px;
+  width: 7.5%;
+  padding: 0 10px;
+  border-radius: 0 4px 4px 0px;
+}
+
+.srs_input_icon {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  padding: 8px 32px 8px 16px;
+  border-right: 1px solid #ebebec;
+}
+
+.srs_input_icon span {
+  margin: 0;
+  font-family: "__Poppins_7035bd", "__Poppins_Fallback_7035bd", Helvetica,
+    Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #3b5662;
+  letter-spacing: 0.15px;
+  color: #3c3f45;
+}
+
+/* Input Field Css Ends */
+
+/* First container css starts */
+.srs_free_Career_courses {
+  margin-bottom: 32px;
+  box-shadow: rgba(50, 71, 92, 0.06) 0px 1px 7px 1px,
+    rgba(50, 71, 92, 0.04) 0px 3px 7px 1px,
+    rgba(50, 71, 92, 0.02) 0px 1px 4px 2px;
+  padding: 32px;
+}
+
+.srs_free_Career_courses h4 {
+  margin: 0px 0px 16px;
+  font-family: "Manrope", __Manrope_Fallback_8fdb38, Helvetica, Poppins,
+    sans-serif;
+  font-size: 34px;
+  color: rgb(0, 35, 51);
+  letter-spacing: 0.016rem;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.srs_free_Career_courses .srs_first_inner_box {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.srs_free_Career_courses .srs_first_inner_box button {
+  color: #000;
+  background-color: rgb(0, 255, 132);
+  padding: 16px 32px;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.srs_share_container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.srs_share_container a {
+  margin: 0 8px;
+}
+
+.srs_share_container p {
+  margin: 0px;
+  font-family: __Poppins_7035bd, __Poppins_Fallback_7035bd, Helvetica, Poppins,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(59, 86, 98);
+  letter-spacing: 0.15px;
+}
+
+/* First container css ends */
+
+/* Card Container css starts */
+.srs_bottom_container {
+  margin: 48px 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+}
+
+/* Card css starts */
+.srs_similar-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  /* max-width: 240px */
+}
+
+.a2n_sm-img {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 20px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.a2n_sm-img h6 {
+  position: absolute;
+  margin: 0px;
+  font-family: "Manrope", __Manrope_Fallback_8fdb38, Helvetica, Poppins,
+    sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: rgb(255, 255, 255);
+  text-shadow: rgba(255, 255, 255, 0.2) 3px 4px 5px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.a2n_sm-text {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #002333;
+}
+
+.a2n_sub-category-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  padding: 16px 24px;
+  justify-content: space-between;
+}
+
+.a2n_sub-category-hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.a2n_sub-category-hover h4 {
+  margin: 0px;
+  font-family: "Poppins", __Poppins_Fallback_7035bd, Helvetica, Poppins,
+    sans-serif;
+  line-height: 24px;
+  color: rgb(59, 86, 98);
+  letter-spacing: 0.15px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.a2n_sub-category-hover article {
+  margin: 0px;
+  font-family: "Poppins", __Poppins_Fallback_7035bd, Helvetica, Poppins,
+    sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgb(117, 136, 145);
+  font-size: 14px;
+}
+
+.a2n_sub-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.a2n_sub-bottom h6 {
+  margin: 0px;
+  font-family: "Poppins", __Poppins_Fallback_7035bd, Helvetica, Poppins,
+    sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgb(0, 35, 51);
+  font-weight: 500;
+}
+
+.srs_similar-card:hover .a2n_sub-category-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Card css ends */
+
+/* Card Container css ends */
+
+/* Media Queries */
+
+/* Input Media Query Starts*/
+@media (max-width: 868px) {
+  .srs_input_of_view_courses form > .srs_input_field,
+  .srs_input_of_view_courses form > .srs_input_field:hover,
+  .srs_input_of_view_courses form > .srs_input_field:focus,
+  .srs_input_of_view_courses form > .srs_input_field:active,
+  .srs_input_of_view_courses form > .srs_input_field:focus-visible {
+    width: 90%;
+  }
+
+  .srs_input_of_view_courses form .srs_input_btn {
+    width: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  .srs_input_of_view_courses form > .srs_input_field,
+  .srs_input_of_view_courses form > .srs_input_field:hover,
+  .srs_input_of_view_courses form > .srs_input_field:focus,
+  .srs_input_of_view_courses form > .srs_input_field:active,
+  .srs_input_of_view_courses form > .srs_input_field:focus-visible {
+    width: 70%;
+  }
+
+  .srs_input_of_view_courses form .srs_input_btn {
+    width: 30%;
+  }
+}
+
+/* Safkat fixing start */
+
+.srs_first_inner_box button a {
+  color: rgb(0, 35, 51);
+  font-weight: 700;
+}
+
+.srs_first_inner_box button a:hover {
+  color: rgb(0, 35, 51);
+}
+
+.srs_similar-card .a2n_sub-category-hover article {
+  overflow: hidden;
+  height: 95px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 767px) {
+  .srs_similar-card .a2n_sub-category-hover article {
+    height: 70px;
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* Safkat fixing end */
+
+/* Input Media Query Ends */
+
+@media (max-width: 768px) {
+  .srs_free_Career_courses h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .srs_free_Career_courses .srs_first_inner_box {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .srs_share_container a {
+    width: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .srs_bottom_container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+/* Media Queries */

@@ -1,0 +1,605 @@
+/*global css for this page */
+.a2n_sec-space {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  gap: 20px;
+  padding: 0 80px;
+}
+
+/* Hero section css start  */
+.a2n_bg {
+  background: #fafafa;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 32px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+.a2n_hero-section h3 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #002333;
+  letter-spacing: 0.016rem;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+
+.a2n_hero-section p {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3b5662;
+  letter-spacing: 0.009375rem;
+}
+
+.a2n_hero-section .icon_container {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.a2n-hero_img {
+  width: 100%;
+  height: 360px;
+}
+
+.a2n-hero_img img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Hero section css end  */
+/* salary section css start  */
+.a2n_salary-container {
+  float: right;
+}
+
+.a2n_salary-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.a2n_salary-section {
+  padding-bottom: 32px;
+}
+
+.a2n_salary-inner_items {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.a2n_salary-container {
+  padding: 0 32px;
+}
+
+.a2n_salary-container h4 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #002333;
+  letter-spacing: 0.009375rem;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.a2n_salary-items h5 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #00af80;
+}
+
+/* salary section css end  */
+/* srs slider css start  */
+.srs_slider-sec {
+  background-color: #e9f0fd;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+h4.a2n_sec-title {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #002333;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.srs_slider_parent .owl-next,
+.srs_slider_parent .owl-prev {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50% !important;
+  width: 38px;
+  height: 38px;
+  color: #00ff84 !important;
+  font-size: 10px !important;
+  margin: 5px;
+  font-weight: 100;
+  background: rgb(0, 35, 51) !important;
+
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.srs_slider_parent .owl-theme .owl-nav {
+  margin-top: 10px;
+  display: flex;
+  background: transparent;
+}
+
+.srs_slider_parent .owl-theme .owl-nav .owl-next {
+  position: absolute;
+  z-index: 8;
+  top: 40%;
+  right: -20px;
+}
+
+.srs_slider_parent .owl-theme .owl-nav .owl-prev {
+  position: absolute;
+  top: 40%;
+  left: -20px;
+}
+
+.srs_slider_parent .owl-carousel .owl-theme .owl-loaded {
+  position: relative;
+}
+
+.srs_slider_parent .owl-theme .owl-dots .owl-dot:hover span {
+  background: #00ff84;
+}
+
+.srs_slider_parent .owl-theme .owl-dots .owl-dot.active span {
+  width: 30px;
+  background: #00ff84;
+}
+
+.srs_slider_parent .owl-theme .owl-dots .owl-dot span {
+  width: 8px;
+  height: 8px;
+  margin: 5px 7px;
+  background: #b0bbc0;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+
+/* srs slider css end  */
+
+/* a2n tab section css start  */
+
+.a2n-main_tab-sec .nav-tabs {
+  border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 12px 16px;
+  color: #3b5662;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  border-radius: 0px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+.a2n-main_tab-sec .nav-tabs > li.active > a,
+.a2n-main_tab-sec .nav-tabs > li.active > a:focus,
+.a2n-main_tab-sec .nav-tabs > li.active > a:hover {
+  color: #002333;
+  background-color: #fff;
+  border: none;
+  border-right: 2px solid rgb(0, 255, 132) !important;
+}
+.a2n-tab_container {
+  padding: 24px;
+}
+.a2n-main_tab-sec h3 {
+  margin: 64px 0px 0px 16px;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: rgb(0, 35, 51);
+}
+.a2n-tab_container,
+.a2n-tab_container p,
+.a2n-tab_container span {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3b5662;
+  letter-spacing: 0.009375rem;
+}
+.a2n-tab_container p {
+  margin-bottom: 10px;
+}
+.a2n-tab_container ul {
+  margin-bottom: 16px;
+}
+.a2n-tab_container ul li {
+  margin-left: 36px;
+}
+.a2n-tab_bottom {
+  margin-top: 32px;
+  padding: 24px;
+  display: block;
+  background-color: rgb(245, 245, 245);
+  border-radius: 8px;
+  width: 300px;
+}
+.a2n-tab_last {
+  margin-top: 32px;
+  padding: 24px;
+  display: none;
+  background-color: rgb(245, 245, 245);
+  border-radius: 8px;
+  width: 300px;
+}
+/* a2n tab section css end  */
+
+/* a2n career section css start  */
+.a2n_career-section {
+  margin-top: 32px;
+}
+
+.a2n_career-container {
+  border-radius: 4px;
+  border: 1px solid #ebebec;
+  padding: 24px;
+  height: 235px;
+}
+
+.a2n_career-container p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #002333;
+}
+
+.a2n_career-contents {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.a2n_career-contents img {
+  width: 80px;
+  height: 80px;
+}
+
+.a2n_career-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 144px;
+}
+
+.a2n_career-inner_items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.a2n_n-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  border-radius: 50%;
+  background-color: #c0c1c3;
+  color: #fff;
+}
+
+/* a2n career section css end  */
+/* a2n career similar section css start  */
+.a2n_similar-sec {
+  margin: 40px 0;
+}
+
+.a2n_similar-sec h3 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #002333;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.a2n_similar-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  max-width: 240px;
+}
+
+.a2n_sm-img {
+  width: 100%;
+  height: 160px;
+  position: relative;
+}
+
+.a2n_sm-img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0px;
+  object-fit: cover;
+  object-position: center center;
+  color: transparent;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.a2n_card-bottom {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.a2n_sm-text {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #002333;
+}
+
+.a2n_sub-category-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+  padding: 32px 16px 16px 16px;
+  justify-content: space-between;
+}
+
+.a2n_sub-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.a2n_sub-items h4 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #002333;
+  margin-bottom: 12px;
+}
+
+.a2n_sub-items article {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #3b5662;
+  line-height: 16px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.a2n_sub-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.a2n_sub-bottom h6 {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #002333;
+}
+
+.a2n_similar-card:hover .a2n_sub-category-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* slider css  */
+.a2n-similar-card_slider .owl-prev {
+  display: none;
+}
+
+.realisticL {
+  background: #008a46;
+}
+
+.realisticW {
+  color: #008a46;
+}
+
+.investigativeL {
+  background: #709cc8;
+}
+
+.investigativeW {
+  color: #709cc8;
+}
+
+.artisticL {
+  background: rgb(0, 134, 152);
+}
+
+.artisticW {
+  color: rgb(0, 134, 152);
+}
+
+.enterprisingL {
+  background: rgb(245, 131, 50);
+}
+
+.enterprisingW {
+  color: rgb(245, 131, 50);
+}
+
+.conventionalL {
+  background: rgb(156, 71, 131);
+}
+
+.conventionalW {
+  color: rgb(156, 71, 131);
+}
+
+.socialL {
+  background: rgb(189, 22, 44);
+}
+
+.socialW {
+  color: rgb(189, 22, 44);
+}
+
+/* a2n career similar section css end  */
+
+/* all responsive css start  */
+@media (max-width: 1199px) {
+  .a2n_sec-space {
+    display: block !important;
+    padding: 0 80px;
+  }
+
+  .a2n_career-items {
+    grid-template-columns: repeat(2, 1fr);
+    height: 224px;
+  }
+
+  .a2n_career-container {
+    height: 340px;
+  }
+}
+
+@media (max-width: 991px) {
+  .a2n_sec-space {
+    padding: 0 16px;
+  }
+
+  .a2n-hero_img {
+    margin-top: 20px;
+  }
+
+  .a2n-hero_img img {
+    width: 100%;
+  }
+
+  .a2n_salary-container {
+    float: left;
+  }
+
+  .a2n_salary-container {
+    padding: 0 48px;
+  }
+
+  .a2n_career-container {
+    max-width: 80%;
+    height: 235px;
+    margin-top: 32px;
+  }
+
+  .a2n_career-items {
+    grid-template-columns: repeat(3, 1fr);
+    height: 144px;
+  }
+}
+
+@media (max-width: 800px) {
+  .a2n_career-container {
+    max-width: 100%;
+  }
+
+  .a2n_salary-container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .a2n_sec-space {
+    padding: 0px;
+  }
+
+  .a2n_career-inner_items {
+    gap: 4px;
+  }
+
+  .a2n_career-items {
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    height: 224px;
+  }
+
+  .a2n_career-container {
+    max-width: 100%;
+    height: 340px;
+    overflow: hidden;
+  }
+
+  .a2n_n-box {
+    width: 28px;
+    height: 28px;
+  }
+
+  .a2n_career-inner_items h4 {
+    font-size: 16px;
+  }
+
+  .a2n_career-contents {
+    flex-wrap: wrap;
+  }
+
+  .a2n_similar-card {
+    margin: 0 auto;
+  }
+}
+
+/* all responsive css end  */

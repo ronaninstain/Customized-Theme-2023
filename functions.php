@@ -23,33 +23,36 @@ if (!defined('VIBE_URL'))
 
 function enqueue_child_theme_styles()
 {
-        // Enqueue parent theme stylesheet
-        wp_enqueue_style('common-style', get_stylesheet_directory_uri() . '/assets/css/common.css', array(), time());
-        wp_enqueue_style('custom-header-style', get_stylesheet_directory_uri() . '/assets/css/custom-header.css', array(), time());
-        wp_enqueue_style('adam-blog-style', get_stylesheet_directory_uri() . '/assets/css/blog-archive-singleblog.css', array(), time());
-        wp_enqueue_style('adam-singleCourse-style', get_stylesheet_directory_uri() . '/assets/css/singleCourseCss.css', array(), time());
-    
-        wp_enqueue_style('adam-singleCareer-style', get_stylesheet_directory_uri() . '/assets/css/careerSingle.css', array(), time());
-        wp_enqueue_style('adam-catCareer-style', get_stylesheet_directory_uri() . '/assets/css/careerCat.css', array(), time());
-        wp_enqueue_style('adam-allCareers-style', get_stylesheet_directory_uri() . '/assets/css/allCareers.css', array(), time());
-        wp_enqueue_style('adam-checkout-style', get_stylesheet_directory_uri() . '/assets/css/checkout.css', array(), time());
-    
-        wp_enqueue_style('owl.theme.default', get_stylesheet_directory_uri() . '/assets/css/owl.theme.default.min.css', array(), time());
-        wp_enqueue_style('owl.carousel.min', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.min.css', array(), time());
-    
-        wp_enqueue_script('jquery-min-custom', get_stylesheet_directory_uri() . '/assets/js/jquery.min.js', array(), '3.3', true);
-        wp_enqueue_script('custom-header', get_stylesheet_directory_uri() . '/assets/js/custom-header.js', array('jquery', 'mCustomScrollbar'),  '1.1', true);
-    
-        //by Shoive start
-        wp_enqueue_script('owl-carousle-js', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), '3.7', true);
-        wp_enqueue_script('course-single-page-js', get_stylesheet_directory_uri() . '/assets/js/singleCourseOwlCarousel.js', array('jquery', 'owl-carousle-js'), '1.25', true);
-    
-        if (is_post_type_archive('careers') || is_tax('careers')) {
-            wp_enqueue_script('allCareer-page-js', get_stylesheet_directory_uri() . '/assets/js/attributeSearchAllCareer.js', array('jquery', 'owl-carousle-js'), '1.23', true);
+    // Enqueue parent theme stylesheet
+    wp_enqueue_style('common-style', get_stylesheet_directory_uri() . '/assets/css/common.css', array(), time());
+    wp_enqueue_style('custom-header-style', get_stylesheet_directory_uri() . '/assets/css/custom-header.css', array(), time());
+    wp_enqueue_style('adam-blog-style', get_stylesheet_directory_uri() . '/assets/css/blog-archive-singleblog.css', array(), time());
+    wp_enqueue_style('adam-singleCourse-style', get_stylesheet_directory_uri() . '/assets/css/singleCourseCss.css', array(), time());
+
+    wp_enqueue_style('adam-singleCareer-style', get_stylesheet_directory_uri() . '/assets/css/careerSingle.css', array(), time());
+    wp_enqueue_style('adam-catCareer-style', get_stylesheet_directory_uri() . '/assets/css/careerCat.css', array(), time());
+    wp_enqueue_style('adam-allCareers-style', get_stylesheet_directory_uri() . '/assets/css/allCareers.css', array(), time());
+    wp_enqueue_style('adam-checkout-style', get_stylesheet_directory_uri() . '/assets/css/checkout.css', array(), time());
+
+    wp_enqueue_style('owl.theme.default', get_stylesheet_directory_uri() . '/assets/css/owl.theme.default.min.css', array(), time());
+    wp_enqueue_style('owl.carousel.min', get_stylesheet_directory_uri() . '/assets/css/owl.carousel.min.css', array(), time());
+
+    wp_enqueue_script('jquery-min-custom', get_stylesheet_directory_uri() . '/assets/js/jquery.min.js', array(), '3.3', true);
+    wp_enqueue_script('custom-header', get_stylesheet_directory_uri() . '/assets/js/custom-header.js', array('jquery', 'mCustomScrollbar'),  '1.1', true);
+
+    //by Shoive start
+    wp_enqueue_script('owl-carousle-js', get_stylesheet_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), '3.7', true);
+    wp_enqueue_script('course-single-page-js', get_stylesheet_directory_uri() . '/assets/js/singleCourseOwlCarousel.js', array('jquery', 'owl-carousle-js'), '1.25', true);
+
+    if (is_post_type_archive('careers') || is_tax('career-cat')) {
+        wp_enqueue_script('allCareer-page-js', get_stylesheet_directory_uri() . '/assets/js/attributeSearchAllCareer.js', array('jquery', 'owl-carousle-js'), '1.23', true);
+
+        if (is_tax('career-cat')) {
             wp_enqueue_script('CareerTax-page-js', get_stylesheet_directory_uri() . '/assets/js/attributeSearchCareersTax.js', array('jquery', 'owl-carousle-js'), '1.23', true);
         }
-        //by Shoive end
-        wp_enqueue_script('jquery');
+    }
+    //by Shoive end
+    wp_enqueue_script('jquery');
 }
 add_action('wp_enqueue_scripts', 'enqueue_child_theme_styles');
 
